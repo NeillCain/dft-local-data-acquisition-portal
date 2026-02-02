@@ -1,0 +1,23 @@
+nelmio_security:
+  # turn off HTTPS forcing in dev
+  forced_ssl: false
+
+  # relax CSP so Encore/GOV.UK assets load in dev
+  csp:
+    enforce:
+      # override default to allow local assets
+      default-src:
+        - 'self'
+      style-src:
+        - 'self'
+        - 'unsafe-inline'   # needed for some GOV.UK styles/templates in dev
+      script-src:
+        - 'self'
+      img-src:
+        - 'self'
+        - 'data:'
+      font-src:
+        - 'self'
+      frame-ancestors:
+        - 'none'
+      block-all-mixed-content: false

@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "xdebug.php-debug",
+    "bmewburn.vscode-intelephense-client",
+    "whatwedo.twig",
+    "editorconfig.editorconfig"
+  ],
+  "unwantedRecommendations": [
+    "damjancvetko.vscode-php-intellisense",
+    "zobo.php-intellisense",
+    "xdebug.php-pack",
+    "xdebug.php-pack-nightly"
+  ]
+}
